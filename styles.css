@@ -2,8 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: url('WebXR.jpg') no-repeat center center fixed;
-    /* Updated to correct background image name */
+    background: url('WebXR.jpg') no-repeat center center fixed; /* Background image */
     background-size: cover;
     color: #fff;
     display: flex;
@@ -56,8 +55,7 @@ a {
     box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
     position: relative;
     overflow: hidden;
-    z-index: 2;
-    /* Ensure buttons are above the overlay */
+    z-index: 2; /* Ensure buttons are above any other content */
 }
 
 a::before {
@@ -93,27 +91,12 @@ a:focus {
         opacity: 0;
         transform: translateY(-20px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-/* Background overlay */
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    /* Dark overlay */
-    z-index: 1;
-    /* Ensure overlay is below the buttons */
-}
-
 h2 {
-    color: #ffcc00;
-    /* Bright color for headings */
+    color: #ffcc00; /* Bright color for headings */
 }
