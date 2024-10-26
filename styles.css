@@ -8,10 +8,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: auto; /* Allow for content overflow */
+    justify-content: flex-start; /* Change to flex-start to avoid center alignment */
+    min-height: 100vh; /* Ensure the body takes at least full viewport height */
     text-align: center;
-    overflow: hidden;
+    overflow-y: auto; /* Allow vertical scrolling */
 }
 
 .container {
