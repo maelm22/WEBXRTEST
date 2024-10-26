@@ -12,97 +12,64 @@ body {
     height: 100vh;
     text-align: center;
     overflow: hidden;
-    position: relative;
-}
-
-h1, h2, p {
-    background-color: rgba(0, 0, 0, 0.6); /* Dark background for better contrast */
-    padding: 15px;
-    border-radius: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for better readability */
 }
 
 h1 {
-    font-size: 2.8rem;
-    margin-bottom: 20px;
-    animation: fadeIn 1s ease-in-out;
+    font-size: 2.5rem;
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-p {
-    line-height: 1.6;
-    margin-bottom: 40px;
-    animation: fadeIn 1s ease-in-out;
-    animation-delay: 0.5s;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeIn 1s ease-in-out forwards;
-    animation-delay: 1s;
+h2 {
+    font-size: 2rem;
+    margin: 15px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 ul {
     list-style: none;
     padding: 0;
-    margin: 0;
-}
-
-li {
     margin: 20px 0;
 }
 
+li {
+    margin: 10px 0;
+}
+
 a {
-    display: inline-block;
-    padding: 15px 30px;
-    background-color: rgba(0, 123, 255, 0.8);
-    color: white;
+    color: #ffcc00; /* Bright color for better visibility */
     text-decoration: none;
-    border-radius: 30px;
-    font-size: 1.2rem;
-    transition: background-color 0.3s, transform 0.3s;
-    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
-    position: relative;
-    overflow: hidden;
-    z-index: 2;
-}
-
-a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 30px;
-    transition: transform 0.3s;
-    z-index: 0;
-    transform: scale(0);
-}
-
-a:hover::before {
-    transform: scale(1);
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
 a:hover {
-    background-color: rgba(0, 100, 200, 0.8);
-    transform: translateY(-3px);
+    color: #ff9900; /* Change color on hover */
 }
 
-a:hover,
-a:focus {
-    outline: none;
+strong {
+    color: #ffcc00; /* Highlight strong text */
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
+ul ul {
+    padding-left: 20px; /* Indent nested lists */
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    body {
+        height: auto; /* Allow for content overflow on smaller screens */
     }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
-h2 {
-    color: #ffcc00; /* Bright color for headings */
+    h1 {
+        font-size: 2rem; /* Smaller font size on mobile */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Smaller font size on mobile */
+    }
+
+    a {
+        font-size: 1rem; /* Make links smaller on mobile */
+    }
 }
