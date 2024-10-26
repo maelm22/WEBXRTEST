@@ -48,11 +48,15 @@ a {
     color: #ffcc00; /* Bright color for better visibility */
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s;
+    transition: color 0.3s, transform 0.3s, background 0.3s; /* Add transition for hover effects */
+    padding: 5px 10px; /* Add padding for a button-like appearance */
+    border-radius: 5px; /* Rounded corners for links */
 }
 
 a:hover {
-    color: #ff9900; /* Change color on hover */
+    color: #fff; /* Change text color on hover */
+    background-color: rgba(255, 204, 0, 0.7); /* Light background on hover */
+    transform: scale(1.05); /* Slightly enlarge the link */
 }
 
 strong {
