@@ -11,25 +11,45 @@
 <body>
     <h1>Velkommen til WebXR Testsite</h1>
     <p>
-        Denne side indeholder links til tre forskellige WebXR testmiljøer. Hver test er designet til at evaluere, hvordan WebXR
-        interagerer med de tre renderere i Godot.<br><br>
-        Jeg er usikker på forskellene mellem dem vedrørende WebXR og webudvikling generelt.<br><br>
-        Vælg venligst en af følgende muligheder for at starte din testoplevelse.
+        Denne side indeholder links til tre forskellige WebXR builds. Hvert build er lavet med en
+        af de tre renderere i Godot.<br><br>
+        
     </p>
 
     <h2>Testmiljøer</h2>
     <ul>
         <li>
-            <a href="Compatible/VR Test.html">Kompatibel Test</a>
-            <p>Denne test vurderer kompatibiliteten af WebXR med standard renderingsteknikker i Godot.</p>
+            <a href="Compatible/VR Test.html">Compatible</a>
+            <ul>
+                <li><strong>WebXR-kompatibilitet</strong>:</li>
+                <ul>
+                    <li><strong>Fordele</strong>: Sikrer bred kompatibilitet på tværs af forskellige enheder, herunder ældre, hvilket er vigtigt for at nå et bredere publikum.</li>
+                    <li><strong>Ulemper</strong>: Mangler nogle avancerede renderingfunktioner, der findes i Forward+, hvilket kan begrænse den grafiske kvalitet af WebXR-oplevelsen.</li>
+                </ul>
+                <li><strong>Brugssag</strong>: Velegnet til WebXR-applikationer, der skal køre på et bredt udvalg af hardware, og sikrer en stabil oplevelse, selv på mindre kapable enheder.</li>
+            </ul>
         </li>
         <li>
-            <a href="Forward/VR Test.html">Forward Test</a>
-            <p>Denne test fokuserer på den fremadrettede renderingstilgang i Godot og dens ydeevne under WebXR.</p>
+            <a href="Forward/VR Test.html">Forward+</a>
+            <ul>
+                <li><strong>WebXR-kompatibilitet</strong>:</li>
+                <ul>
+                    <li><strong>Fordele</strong>: Tilbyder avancerede renderingkapaciteter, såsom bedre belysning og materialehåndtering, som kan forbedre kvaliteten af VR/AR-oplevelser betydeligt.</li>
+                    <li><strong>Ulemper</strong>: Kan kræve mere kraftfuld hardware, hvilket kan begrænse tilgængeligheden på ældre mobile enheder eller lavere-end browsere.</li>
+                </ul>
+                <li><strong>Brugssag</strong>: Ideel til mere komplekse WebXR-applikationer, der kræver høj visuel troværdighed og kan udnytte moderne hardware.</li>
+            </ul>
         </li>
         <li>
-            <a href="Mobile/VR Test.html">Mobil Test</a>
-            <p>Denne test vurderer, hvor godt WebXR fungerer på mobile enheder ved hjælp af Godots renderingsevner.</p>
+            <a href="Mobile/VR Test.html">Mobile</a>
+            <ul>
+                <li><strong>WebXR-kompatibilitet</strong>:</li>
+                <ul>
+                    <li><strong>Fordele</strong>: Optimeret til ydeevne, hvilket gør det velegnet til lette VR/AR-oplevelser på mobile enheder.</li>
+                    <li><strong>Ulemper</strong>: Begrænsede visuelle funktioner kan begrænse kompleksiteten af WebXR-applikationer, hvilket potentielt kan sænke den visuelle kvalitet af immersive oplevelser.</li>
+                </ul>
+                <li><strong>Brugssag</strong>: Bedst til enklere WebXR-applikationer, der henvender sig til lavere mobile enheder.</li>
+            </ul>
         </li>
     </ul>
 </body>
